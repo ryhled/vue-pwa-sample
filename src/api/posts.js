@@ -1,5 +1,5 @@
-import * as axios from 'axios';
 import { API_URL } from '@/config';
+import axios from 'axios';
 
 export const getPosts = async function getPosts() {
   try {
