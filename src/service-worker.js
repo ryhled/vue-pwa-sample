@@ -37,16 +37,12 @@ if (workbox) {
   workbox.routing.registerRoute(
     workbox.routing.registerRoute(
       new RegExp('https://vue-pwa-samples-db.herokuapp.com'),
-      new workbox.strategies.StaleWhileRevalidate({ // NetworkFirst
+      new workbox.strategies.NetworkFirst({ // NetworkFirst
         // networkfirst alt
         cacheName: 'api',
         plugins: [
           // https://developers.google.com/web/tools/workbox/modules/workbox-broadcast-update
           new workbox.broadcastUpdate.Plugin(),
-          new workbox.expiration.Plugin({
-            maxEntries: 60,
-            maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
-          }),
         ],
       }),
     ),
