@@ -37,7 +37,7 @@ if (workbox) {
   workbox.routing.registerRoute(
     workbox.routing.registerRoute(
       new RegExp('https://vue-pwa-samples-db.herokuapp.com'),
-      new workbox.strategies.StaleWhileRevalidate({
+      new workbox.strategies.StaleWhileRevalidate({ // NetworkFirst
         // networkfirst alt
         cacheName: 'api',
         plugins: [
