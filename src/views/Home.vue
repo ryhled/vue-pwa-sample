@@ -1,11 +1,10 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
+    <h1>Sample Vue PWA application</h1>
+    <p>Uses a simple REST demo API for managing posts.</p>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'Home',
-};
+export default {};
 </script>

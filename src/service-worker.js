@@ -2,7 +2,7 @@
 /* eslint-disable no-restricted-globals */
 /* eslint-disable no-undef */
 if (workbox) {
-  console.info('Workbox available, initializing..');
+  console.info('[ServiceWorker] Workbox available, initializing..');
   workbox.setConfig({
     debug: true,
   });
@@ -52,5 +52,5 @@ if (workbox) {
     ),
   );
 } else {
-  console.warn('Workbox not available, aborting..');
+  console.warn('[ServiceWorker] Workbox not available, aborting..');
 }
