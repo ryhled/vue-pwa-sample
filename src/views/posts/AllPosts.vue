@@ -11,7 +11,7 @@
 
 <script>
 import ListPosts from '@/components/ListPosts.vue';
-import localForage from 'localforage';
+// import localForage from 'localforage';
 
 export default {
   data() {
@@ -22,9 +22,9 @@ export default {
   components: {
     ListPosts,
   },
-  async created() {
-    await localForage.setItem('ctitle', 'Yesbox');
-    this.testTitle = await localForage.getItem('ctitle');
-  },
+  // async created() {
+  //   await localForage.setItem('ctitle', 'Yesbox');
+  //   this.testTitle = await localForage.getItem('ctitle');
+  // },
 };
 </script>
